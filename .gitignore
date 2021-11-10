@@ -1,0 +1,6 @@
+# System and generated files.
+.DS_Store
+yarn.lock
+
+# Directries.
+node_modules/

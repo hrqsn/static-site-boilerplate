@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: inherit;
+  padding: 0 24px;
+  margin: 0 auto;
+  &-xs {
+    max-width: 480px;
+  }
+  &-sm {
+    max-width: 576px;
+  }
+  &-md {
+    max-width: 768px;
+  }
+  &-lg {
+    max-width: 992px;
+  }
+  &-xl {
+    max-width: 1200px;
+  }
+}

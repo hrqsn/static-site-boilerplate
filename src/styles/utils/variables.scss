@@ -1,0 +1,25 @@
+$c-white: #ffffff;
+$c-text: #111111;
+$c-primary: #1E40AF;
+$c-border: #f0f0f0;
+$c-gray-0: #F9FAFB;
+$c-gray-1: #F3F4F6;
+$c-gray-2: #E5E7EB;
+$c-gray-3: #D1D5DB;
+$c-gray-4: #9CA3AF;
+$c-gray-5: #6B7280;
+$c-gray-6: #4B5563;
+
+$font-xs: 0.75rem;
+$font-sm: 0.875rem;
+$font-base: 1rem;
+$font-md: 1.25rem;
+$font-lg: 1.5rem;
+$font-xl: 2rem;
+$font-xxl: 2.5rem;
+
+$font-sans: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+
+$z-indexes: ('transition', 'preloader', 'navigation', 'content', 'noise', 'bg');
+
+$ease-in-out: cubic-bezier(0.79,0.14,0.15,0.86);

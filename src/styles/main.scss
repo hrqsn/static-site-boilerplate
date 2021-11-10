@@ -1,0 +1,17 @@
+@import './base/reset';
+
+@import './utils/variables';
+@import './utils/functions';
+@import './utils/mixins';
+@import './utils/responsive';
+
+@import './base/base';
+
+@import './components/loader';
+
+@import './layouts/footer';
+@import './layouts/navigation';
+@import './layouts/wrapper';
+
+@import './pages/home';
+@import './pages/about';

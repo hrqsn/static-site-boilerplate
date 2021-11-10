@@ -1,0 +1,52 @@
+block var 
+  - var active = "top"
+  - var loader = "main"
+
+mixin navigation-link(title, url)
+  a(href=url, class="navigation-link", data-active=active==title)= title
+
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    block meta
+      title Boilerplate
+      include head
+    block link
+      if loader == "main"
+        link(rel='stylesheet', href="/styles/loader-main.css")
+      else if loader == "sub"
+        link(rel='stylesheet', href="/styles/loader-sub.css")
+    block script
+      script(src="/scripts/vendors/pace.min.js") 
+    link(rel="stylesheet", href="/styles/main.css")
+  body
+    if loader == "main"
+      .loader.loader-main
+        .loading
+    else if loader == "sub"
+      .loader.loader-sub
+        .loading
+
+    div
+      header.navigation 
+        .wrapper.wrapper-lg
+          .navigation-inner 
+            .navigation-root
+              a(href="/" class="navigation-root--logo") Boilerplate
+            .navigation-links 
+              +navigation-link("top", "/")
+              +navigation-link("about", "/about")
+
+      main 
+        block content
+
+      include footer
+
+  block script-body
+    script(src="/scripts/main.js") 
+
+  noscript このサイトにアクセスするにはJavaScriptを有効にしてください。
+
+  <!-- thanks for reading :3 -->

@@ -1,0 +1,25 @@
+.footer {
+  z-index: z('navigation');
+}
+
+.footer-inner {
+  padding: 180px 0 128px;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-size: $font-sm;
+  color: $c-gray-6;
+  overflow: hidden;
+
+  div {
+    transition: transform 1s $ease-in-out 1.2s;
+    transform: translateY(101%);
+  }
+}
+
+.pace-done {
+  .footer-copyright div {
+    transform: translateY(0);
+  }
+}

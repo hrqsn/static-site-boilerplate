@@ -1,0 +1,1 @@
+{"version":3,"file":"scripts/main.js","mappings":"AAAAA,OAAOC,OAAS","sources":["webpack://static-site-boilerplate/./src/scripts/index.js"],"sourcesContent":["window.onload = () => {}\n"],"names":["window","onload"],"sourceRoot":""}
